@@ -5,9 +5,6 @@ $(function () {
 // make header full screen
 
   $(".header").height($(window).height());
-  $(window).resize(function () {
-    $(".header").height($(window).height());
-  });
 
 //  fixed navbar for mobile
 
