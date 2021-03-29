@@ -193,7 +193,7 @@ body {
   .header .login {
     position: fixed;
     z-index: 1;
-    left: 8vh;
+    left: 2%;
     margin-top: -30px;
     display: none;
   }
