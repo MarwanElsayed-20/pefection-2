@@ -13,7 +13,7 @@
 
   <!-- nav bar -->
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="#">Per<span class="main-color">fection</span></a>
       <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav" aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,20 +22,25 @@
       <div class="collapse navbar-collapse" id="mobile-nav">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#aboutme">About</a>
+            <a class="nav-link" data-class=".about-me">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" data-class=".features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link" data-class=".pricing">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testi">testimonials</a>
+            <a class="nav-link" data-class=".testi">testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" data-class=".contact">Contact</a>
           </li>
+          <!-- start for mobile -->
+
+            <button class="nav-link d-block d-sm-none sign-in">sign in</button>
+
+          <!-- end for mobile -->
         </ul>
       </div>
     </div>
@@ -50,7 +55,7 @@
       <div class="container">
         <div class="row center-vh">
           <div class="head d-none d-sm-block col-lg-6">
-            <h1>Per<span class="main-color">fection</span></h1>
+            <h1>Per<span class="main-color" style="text-shadow:none;">fection</span></h1>
             <h2 class="text-uppercase">every fection is perfect </h2>
             <div class="line"></div>
             <p class="lead">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
@@ -79,6 +84,26 @@
               </div>
             </div>
           </div>
+          <!-- start for mobile -->
+          <div class="login mx-auto text-center d-sm-none col-sm-12">
+            <div class="container">
+              <div>
+                <button type="button" class="close" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h3>Try Your <span class="main-color text-uppercase">free </span>trial today</h3>
+              </div>
+              <form>
+                <input type="name" placeholder="Name">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+              </form>
+              <div>
+                <button>Get Started</button>
+              </div>
+            </div>
+          </div>
+          <!-- end for mobille -->
         </div>
       </div>
     </div>
@@ -112,33 +137,61 @@
 
   <!--taps -->
 
-  <div id="aboutme" class="tabs">
+  <div class="tabs about-me">
     <div class="container">
       <div class="row">
         <div class="tab col-lg-2 btn-group-vertical d-none d-sm-block">
-          <button class="text-uppercase">tab 1</button>
-          <button class="text-uppercase">tab 2</button>
-          <button class="text-uppercase">tab 3</button>
+          <button class="text-uppercase selected" data-class=".information1">tab 1</button>
+          <button class="text-uppercase" data-class=".information2">tab 2</button>
+          <button class="text-uppercase" data-class=".information3">tab 3</button>
         </div>
         <!-- start for mobile screen -->
         <div class="tab btn-group text-center d-block d-sm-none">
-          <button class="text-uppercase">tab 1</button>
-          <button class="text-uppercase">tab 2</button>
-          <button class="text-uppercase">tab 3</button>
+          <button class="text-uppercase selected" data-class=".information1">tab 1</button>
+          <button class="text-uppercase" data-class=".information2">tab 2</button>
+          <button class="text-uppercase" data-class=".information3">tab 3</button>
         </div>
         <!-- end for mobile screen -->
-        <div class="information col-lg-6 d-none d-sm-block">
-          <h4 class="text-capitalize">tabs with soft transitioning effect</h4>
-          <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with <br> <br>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           <button>Download</button>
+        <div class="tap-content col-lg-6 d-none d-sm-block">
+          <div class="information information1">
+            <h4 class="text-capitalize">tabs with soft transitioning effect 1</h4>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with <br> <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             <button>Download</button>
+          </div>
+          <div class="information information2">
+            <h4 class="text-capitalize">tabs with soft transitioning effect 2</h4>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with <br> <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             <button>Download</button>
+          </div>
+          <div class="information information3">
+            <h4 class="text-capitalize">tabs with soft transitioning effect 3</h4>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with <br> <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             <button>Download</button>
+          </div>
         </div>
         <!-- start for mobile screen -->
-        <div class="information d-block d-sm-none text-center">
-          <h4 class="text-capitalize">tabs with soft transitioning effect</h4>
-          <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with <br> <br>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           <button>Download</button>
+        <div class="tap-content d-block d-sm-none text-center">
+          <div class="information information1">
+            <h4 class="text-capitalize">tabs with soft transitioning effect 1</h4>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with <br> <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             <button>Download</button>
+          </div>
+          <div class="information information2">
+            <h4 class="text-capitalize">tabs with soft transitioning effect 2</h4>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with <br> <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             <button>Download</button>
+          </div>
+          <div class="information information3">
+            <h4 class="text-capitalize">tabs with soft transitioning effect 3</h4>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with <br> <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             <button>Download</button>
+          </div>
         </div>
         <!-- end for mobile screen -->
         <div class="sympol col-lg-4 d-none d-sm-block">
@@ -214,7 +267,6 @@
         <!-- end for mobile screen -->
       </div>
     </div>
-  </div>
 
   <!-- first list -->
 
@@ -254,7 +306,7 @@
 
   <!-- features -->
 
-  <div id="features" class="features">
+  <div class="features">
     <div class="container">
       <div class="awesome text-center">
         <h2 class="text-uppercase">why this is awesome</h2>
@@ -285,7 +337,7 @@
 
   <!-- pricing options -->
 
-  <div id="pricing" class="pricing-options text-center">
+  <div class="pricing-options pricing text-center">
     <div class="container">
       <div class="pricing-info">
         <h2 class="text-uppercase">pricing options</h2>
@@ -349,7 +401,7 @@
 
   <!-- testimonials -->
 
-  <div id="testi" class="testi ">
+  <div class="testi">
     <div class="container">
       <div class="testi-info text-center">
         <h2 class="text-uppercase">what our coustomers are saying</h2>
@@ -420,7 +472,7 @@
 
   <!-- contact -->
 
-  <div id="contact" class="contact-us text-center">
+  <div class="contact-us contact text-center">
     <div class="container">
       <div class="contact-us-info text-center">
         <h2 class="text-uppercase">contact us</h2>

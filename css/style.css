@@ -7,7 +7,9 @@ body {
   background: black;
   height: 70px
 }
-
+.nav-bar {
+  background: black
+}
 .navbar-light .navbar-brand {
   padding-left: 1px;
   color: rgb(255,255,255)
@@ -33,6 +35,7 @@ body {
   color: rgb(169,169,169);
   text-shadow: rgb(255,155,81) 0 0 5px;
   border-bottom: 1px solid rgb(255,155,81);
+  cursor: pointer;
 }
 .navbar-toggler{
   background: rgb(255,155,81)
@@ -86,7 +89,8 @@ body {
 
 .header .head h1 {
   font-size: 90px;
-  color: white
+  color: white;
+  text-shadow: rgb(255,155,81) 0 0 15px;
 }
 
 .header .head h2 {
@@ -116,11 +120,11 @@ body {
 
 .header .login {
   background: white;
-  background: rgb(255 255 255);
   height: 370px;
   width: 376px;
   padding: 0;
   border-radius: 3px;
+  box-shadow: 0 0 15px 5px black
 }
 
 .header .login > div:first-child {
@@ -158,13 +162,40 @@ body {
   border: none;
   color: rgb(255,245,239);
 }
+.sign-in {
+  background: none;
+  border: none;
+  border-top: 2px solid;
+}
+.close {
+  position: absolute;
+  right: -40px;
+  border: none;
+  background: none;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  top: -60px;
+  color: rgb(255,155,81);
+  text-shadow: rgb(255,155,81) 0 0 15px;
+}
 
 @media (max-width: 575px) {
+  .header .center-vh {
+    margin-top: 15vh;
+  }
   .header .head h1 {
     font-size: 90px;
   }
   .header .head h2 {
     font-size: 30px
+  }
+  .header .login {
+    position: fixed;
+    z-index: 1;
+    left: 8vh;
+    margin-top: -30px;
+    display: none;
   }
 }
 
@@ -197,6 +228,34 @@ body {
   cursor: pointer;
 }
 
+.social .social-media-icons .fa-facebook-f:hover {
+  color: #3b5998;
+}
+
+.social .social-media-icons .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.social .social-media-icons .fa-google-plus-g:hover {
+  color: #dd4b39;
+}
+
+.social .social-media-icons .fa-pinterest:hover {
+  color: #e60023;
+}
+
+.social .social-media-icons .fa-instagram:hover {
+  color: #c13584;
+}
+
+.social .social-media-icons .fa-think-peaks:hover {
+  color: black;
+}
+
+.social .social-media-icons .fa-phone-volume:hover {
+  color: darkgreen;
+}
+
 /* social media */
 
 /* tabs */
@@ -207,6 +266,10 @@ body {
 
 .tabs .tab {
   margin: 120px 0
+}
+
+.tabs .tab .selected {
+  background: rgb(255,155,81);
 }
 
 .tabs .tab button {
@@ -220,6 +283,10 @@ body {
 
 .tabs .tab button:hover {
   background: rgb(255,155,81)
+}
+
+.tabs .tap-content > div:not(.information1) {
+  display: none;
 }
 
 .tabs .information {
@@ -264,7 +331,7 @@ body {
 /* first list */
 
 .first-list {
-  margin-top: 100px
+  margin-top: 100px;
 }
 
 .first-list .list-info h4 {
@@ -330,7 +397,8 @@ body {
 .second-list {
   margin-top: 100px;
   padding: 100px 0 50px;
-  background: rgb(245,245,245)
+  background: rgb(245,245,245);
+  display: none;
 }
 
 .second-list .list-info h4 {
@@ -361,7 +429,7 @@ body {
 /* features */
 
 .features {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .features .awesome {
